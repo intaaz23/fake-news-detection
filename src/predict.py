@@ -43,7 +43,7 @@ def predict_news(text, model, vectorizer):
         probabilities = model.predict_proba(features)[0]
         confidence = max(probabilities) * 100
 
-    label = 'FAKE' if prediction == 1 else 'REAL'
+    label = 'REAL' if prediction == 1 else 'FAKE'
 
     result = {
         'prediction': label,
