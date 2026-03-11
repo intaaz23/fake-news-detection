@@ -1,0 +1,5 @@
+# This file keeps the data directory in git
+# Place your dataset files here:
+# - train.csv
+# - test.csv
+# Download from: https://www.kaggle.com/c/fake-news/data
