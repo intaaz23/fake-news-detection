@@ -71,7 +71,7 @@ def train_and_evaluate(X_train, X_test, y_train, y_test):
         prec = precision_score(y_test, y_pred, average='weighted')
         rec = recall_score(y_test, y_pred, average='weighted')
         f1 = f1_score(y_test, y_pred, average='weighted')
-        report = classification_report(y_test, y_pred)
+        report = classification_report(y_test, y_pred, target_names=['FAKE', 'REAL'])
         cm = confusion_matrix(y_test, y_pred)
 
         results[name] = {
